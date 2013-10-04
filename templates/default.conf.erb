@@ -14,6 +14,9 @@ route <%= route %>
 <% end -%>
 secret <%= @secret %>
 port <%= @port %>
+<% if @keepalive -%>
+keepalive <%= @keepalive_ping_interval %> <%= @keepalive_ping_timeout %>
+<% end -%>
 
 comp-lzo
 user openvpn

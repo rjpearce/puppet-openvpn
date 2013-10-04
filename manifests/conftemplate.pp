@@ -13,6 +13,9 @@ define openvpn::conftemplate (
   $ipaddress_remote,
   $routes = [],
   $secret,
+  $keepalive = false,
+  $keepalive_ping_interval = 10,
+  $keepalive_ping_timeout = 120,
   $port = '1194'
 ) {
 
